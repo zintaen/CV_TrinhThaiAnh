@@ -3162,9 +3162,9 @@
 					<div class="block-title">
 						<h2 class="title">Who am I ?</h2>
 					</div>
-					<p class="lead mt-40">Trịnh Thái Anh is a lovely web developer located in our lovely
+					<p class="lead mt-40">Stephen Cheng is a lovely web developer located in our lovely
 						Earth. He has been working on it professionally
-						for over 3 years. And still loves every minute of it.</p>
+						for over 4 years. And still loves every minute of it.</p>
 					<p class="mt-20">
 						That's enough of talking about myself in the third person. I love to enhance my friends's
 						pictures since I was a child and
@@ -4031,27 +4031,27 @@
 			$(document).ready(function () {
 				const mainNav = $(".main-nav")
 					, mainNavOffset = mainNav.offset();
-				$(window).scroll(function () {
-					const btn = $('#toTop');
+				// $(window).scroll(function () {
+				// 	const btn = $('#toTop');
 
-					if ($(window).scrollTop() > 300) {
-						btn.addClass('show');
-					} else {
-						btn.removeClass('show');
-					}
+				// 	if ($(window).scrollTop() > 300) {
+				// 		btn.addClass('show');
+				// 	} else {
+				// 		btn.removeClass('show');
+				// 	}
 
-					if ($(this).scrollTop() > mainNavOffset.top - 20 && mainNav.hasClass("default")) {
-						mainNav.fadeOut("fast", function () {
-							$(this).removeClass("default").addClass("switched-header").slideDown(200)
-						});
-					} else {
-						if ($(this).scrollTop() <= mainNavOffset.top - 20 && mainNav.hasClass("switched-header")) {
-							mainNav.slideUp(200, function () {
-								$(this).removeClass("switched-header").addClass("default").fadeIn(200)
-							});
-						}
-					}
-				});
+				// 	if ($(this).scrollTop() > mainNavOffset.top - 20 && mainNav.hasClass("default")) {
+				// 		mainNav.fadeOut("fast", function () {
+				// 			$(this).removeClass("default").addClass("switched-header").slideDown(200)
+				// 		});
+				// 	} else {
+				// 		if ($(this).scrollTop() <= mainNavOffset.top - 20 && mainNav.hasClass("switched-header")) {
+				// 			mainNav.slideUp(200, function () {
+				// 				$(this).removeClass("switched-header").addClass("default").fadeIn(200)
+				// 			});
+				// 		}
+				// 	}
+				// });
 
 				$("a.scroll").smoothScroll({
 					speed: 800,
